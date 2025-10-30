@@ -1,6 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, MapPin, Send } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 
 const Contact = () => {
@@ -10,17 +10,39 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(''); // 'success' or 'error'
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+    setSubmitStatus('');
+
+    try {
+      const response = await fetch('https://formspree.io/f/xdkplekg', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `New message from ${formData.name} - Portfolio Contact Form`
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      console.error('Form submission error:', error);
+    } finally {
       setIsSubmitting(false);
-      setFormData({ name: '', email: '', message: '' });
-      alert('Thank you for your message! I\'ll get back to you soon.');
-    }, 2000);
+    }
   };
 
   const handleChange = (e) => {
@@ -46,6 +68,27 @@ const Contact = () => {
             Feel free to reach out for any questions or opportunities
           </p>
         </motion.div>
+
+        {/* Status Messages */}
+        {submitStatus === 'success' && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="max-w-2xl mx-auto mb-6 p-4 bg-green-900/20 border border-green-500 rounded-lg text-green-400 text-center"
+          >
+            ✅ Thank you for your message! I'll get back to you soon.
+          </motion.div>
+        )}
+
+        {submitStatus === 'error' && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="max-w-2xl mx-auto mb-6 p-4 bg-red-900/20 border border-red-500 rounded-lg text-red-400 text-center"
+          >
+            ❌ Sorry, there was an error sending your message. Please try again or email me directly at {personalInfo.email}.
+          </motion.div>
+        )}
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}

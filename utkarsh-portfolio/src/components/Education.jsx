@@ -47,8 +47,18 @@ const Education = () => {
                   <div className="bg-dark-gray rounded-2xl p-6 border border-gray-800 hover:border-purple-500 transition-all duration-300 card-hover">
                     {/* Institution Logo and Name */}
                     <div className="flex items-center space-x-4 mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-white font-bold">
-                        {edu.institution.split(' ').map(word => word[0]).join('')}
+                      <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center overflow-hidden border-2 border-purple-500 flex-shrink-0">
+                        {edu.logo ? (
+                          <img 
+                            src={edu.logo} 
+                            alt={`${edu.institution} logo`}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <span className="text-purple-600 font-bold text-sm">
+                            {edu.institution.split(' ').map(word => word[0]).join('')}
+                          </span>
+                        )}
                       </div>
                       <div>
                         <h3 className="text-lg font-bold text-white">{edu.institution}</h3>

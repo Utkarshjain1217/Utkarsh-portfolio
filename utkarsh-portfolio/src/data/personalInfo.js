@@ -6,7 +6,7 @@ export const personalInfo = {
   github: "https://github.com/Utkarshjain1217",
   linkedin: "https://www.linkedin.com/in/utkarsh-jain-5a673b22b/",
   twitter: "https://twitter.com/utkarshjain",
-  instagram: "https://instagram.com/utkarshjain",
+  instagram: "https://www.instagram.com/_iamutkarshjain__?igsh=MTd6YjhlcmVvb3pzbQ==",
   email: "utkarshjain1217@gmail.com",
-  profileImage: "/images/utkarsh-portfolio.jpg"
+  profileImage: "/images/utkarsh-portfolio.png"
 };

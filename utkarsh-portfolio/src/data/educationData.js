@@ -2,10 +2,10 @@ export const education = [
   {
     id: 1,
     institution: "BMS Institute of Technology & Management",
-    degree: "Bachelor of Engineering – Computer Science",
-    period: "2021 – 2025",
-    grade: "9.22 CGPA",
-    logo: "/images/bms-logo.jpg",
+    degree: "Bachelor of Engineering – Computer Science and Buisness System",
+    period: "2023 – 2027",
+    grade: "8.44 CGPA",
+    logo: "/images/bms-logo.jpeg",
     achievements: [
       "Class Representative",
       "Member of Coding Club",
@@ -14,14 +14,14 @@ export const education = [
   },
   {
     id: 2,
-    institution: "Kendriya Vidyalaya",
-    degree: "Class XII - Science with Computer Science",
-    period: "2020 – 2021",
-    grade: "95.2%",
-    logo: "/images/kv-logo.png",
+    institution: "Shivlik Public School",
+    degree: "Class XII - Science",
+    period: "2021 – 2022",
+    grade: "87%",
+    logo: "/images/school.png",
     achievements: [
-      "School Topper in Computer Science",
-      "Active in Science Exhibitions"
+      "Represented Distric in State Level badminton compititon",
+      "Active in Co-curricular activites"
     ]
   }
 ];
