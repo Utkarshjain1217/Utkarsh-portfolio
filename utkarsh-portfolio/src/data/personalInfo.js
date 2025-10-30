@@ -8,5 +8,5 @@ export const personalInfo = {
   twitter: "https://twitter.com/utkarshjain",
   instagram: "https://instagram.com/utkarshjain",
   email: "utkarshjain1217@gmail.com",
-  profileImage: "C:\Users\utkar\OneDrive\Pictures\Screenshots\Screenshot 2025-01-21 212604.png"
+  profileImage: "/images/utkarsh-portfolio.jpg"
 };

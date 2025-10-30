@@ -5,7 +5,7 @@ export const education = [
     degree: "Bachelor of Engineering – Computer Science",
     period: "2021 – 2025",
     grade: "9.22 CGPA",
-    logo: "/images/bms-logo.png",
+    logo: "/images/bms-logo.jpg",
     achievements: [
       "Class Representative",
       "Member of Coding Club",

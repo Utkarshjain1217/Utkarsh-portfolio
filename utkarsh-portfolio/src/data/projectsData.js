@@ -5,7 +5,7 @@ export const projects = [
     period: "May 2024 – Present",
     description: "A college social networking app built with Java and Android Studio featuring real-time messaging, event management, and student collaboration tools.",
     technologies: ["Java", "Android Studio", "Firebase", "SQLite", "Material Design"],
-    image: "/images/unilink.png",
+    image: "/images/project1.jpg",
     githubLink: "https://github.com/utkarshjain/unilink",
     liveLink: "#"
   },
@@ -15,7 +15,7 @@ export const projects = [
     period: "Feb 2024 – Mar 2024",
     description: "A dynamic Java web application for Data Structures and Algorithms learning platform with interactive code editor and progress tracking.",
     technologies: ["Java", "JDBC", "Servlet", "MySQL", "HTML", "CSS", "JS"],
-    image: "/images/dsaportal.png",
+    image: "/images/project2.jpg",
     githubLink: "https://github.com/utkarshjain/dsa-portal",
     liveLink: "#"
   },
@@ -25,7 +25,7 @@ export const projects = [
     period: "Dec 2023 – Jan 2024",
     description: "AI-powered news aggregation app that provides personalized news feeds using machine learning algorithms and natural language processing.",
     technologies: ["React", "Node.js", "Python", "MongoDB", "TensorFlow"],
-    image: "/images/newswhiz.png",
+    image: "/images/project3.jpg",
     githubLink: "https://github.com/utkarshjain/newswhiz",
     liveLink: "#"
   }
