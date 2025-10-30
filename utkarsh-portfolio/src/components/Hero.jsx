@@ -42,7 +42,9 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href={personalInfo.resume}
-                download
+                download="Utkarsh_Jain_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center space-x-2 gradient-bg px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300"
               >
                 <Download size={20} />
