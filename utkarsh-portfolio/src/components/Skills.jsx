@@ -37,10 +37,10 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 font-sora">
             <span className="gradient-text">Skills</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto font-montserrat">
             Over the last few years, I have been developing the following skills and technologies.
           </p>
         </motion.div>
@@ -58,14 +58,10 @@ const Skills = () => {
               variants={itemVariants}
               className="bg-dark rounded-xl p-6 border border-gray-800 hover:border-purple-500 transition-all duration-300 card-hover"
             >
-              <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${category.color} flex items-center justify-center text-white text-xl mb-4`}>
-                {category.skills[0].icon}
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-4">{category.title}</h3>
+              <h3 className="text-xl font-semibold text-white mb-4 font-sora">{category.title}</h3>
               <div className="space-y-3">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="flex items-center space-x-3 text-gray-300">
-                    <span className="text-lg">{skill.icon}</span>
+                  <div key={skillIndex} className="flex items-center text-gray-300 font-montserrat">
                     <span>{skill.name}</span>
                   </div>
                 ))}

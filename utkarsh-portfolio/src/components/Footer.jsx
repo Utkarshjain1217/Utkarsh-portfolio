@@ -19,10 +19,10 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold gradient-text mb-4">
+            <h3 className="text-2xl font-bold gradient-text mb-4 font-sora">
               {personalInfo.name}
             </h3>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed font-montserrat">
               Web & Android Developer passionate about building innovative solutions 
               and creating amazing user experiences.
             </p>
@@ -30,13 +30,13 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-white mb-4 font-sora">Quick Links</h4>
             <div className="grid grid-cols-2 gap-2">
               {quickLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                  className="text-gray-400 hover:text-white transition-colors duration-300 font-montserrat"
                 >
                   {link.name}
                 </a>

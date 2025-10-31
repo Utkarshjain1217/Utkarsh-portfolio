@@ -1,9 +1,9 @@
 export const projects = [
   {
     id: 1,
-    title: "UniLink",
-    period: "May 2024 – Present",
-    description: "A college social networking app built with Java and Android Studio featuring real-time messaging, event management, and student collaboration tools.",
+    title: "Healthcare_db",
+    period: "May 2025 – ",
+    description: "A college socjune 2025ial networking app built with Java and Android Studio featuring real-time messaging, event management, and student collaboration tools.",
     technologies: ["Java", "Android Studio", "Firebase", "SQLite", "Material Design"],
     image: "/images/project1.jpg",
     githubLink: "https://github.com/utkarshjain/unilink",
@@ -11,12 +11,12 @@ export const projects = [
   },
   {
     id: 2,
-    title: "DSA Portal",
-    period: "Feb 2024 – Mar 2024",
-    description: "A dynamic Java web application for Data Structures and Algorithms learning platform with interactive code editor and progress tracking.",
-    technologies: ["Java", "JDBC", "Servlet", "MySQL", "HTML", "CSS", "JS"],
+    title: "Healthcare Database Management System",
+    period: "May 2025 – June 2024",
+    description: "Built a full-stack hospital management web app with real-time dashboards using React.js and Express.js, optimizing data efficiency and scalability through structured SQL database design.",
+    technologies: ["React.js", "Node.js", "Express.js", "MySQL", "HTML", "CSS"],
     image: "/images/project2.jpg",
-    githubLink: "https://github.com/utkarshjain/dsa-portal",
+    githubLink: "https://github.com/Utkarshjain1217/Healthcare_db",
     liveLink: "#"
   },
   {

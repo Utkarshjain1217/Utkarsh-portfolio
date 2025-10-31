@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="section-padding py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <a href="#" className="text-2xl font-bold gradient-text">
+          <a href="#" className="text-2xl font-bold gradient-text font-sora">
             &lt;Utkarsh/Jain&gt;
           </a>
 
@@ -40,7 +40,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:text-white transition-colors duration-300 font-medium"
+                className="text-gray-300 hover:text-white transition-colors duration-300 font-medium font-montserrat"
               >
                 {item.name}
               </a>

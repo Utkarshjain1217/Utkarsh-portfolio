@@ -12,7 +12,8 @@ export default {
         'dark-gray': '#1F2833',
       },
       fontFamily: {
-        'inter': ['Inter', 'sans-serif'],
+        'sora': ['Sora', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
       }
     },
   },

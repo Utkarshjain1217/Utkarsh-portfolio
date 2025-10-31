@@ -13,10 +13,10 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 font-sora">
             <span className="gradient-text">Projects</span>
           </h2>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-lg font-montserrat">
             Some of my recent work and personal projects
           </p>
         </motion.div>
@@ -35,18 +35,18 @@ const Projects = () => {
               <div className="h-48 bg-gradient-to-br from-purple-500/20 to-pink-500/20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-80"></div>
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-xl font-bold text-white">{project.title}</h3>
+                  <h3 className="text-xl font-bold text-white font-sora">{project.title}</h3>
                 </div>
               </div>
 
               {/* Project Content */}
               <div className="p-6">
-                <div className="flex items-center space-x-2 text-gray-400 mb-3">
+                <div className="flex items-center space-x-2 text-gray-400 mb-3 font-montserrat">
                   <Calendar size={16} />
                   <span className="text-sm">{project.period}</span>
                 </div>
 
-                <p className="text-gray-300 mb-4 leading-relaxed">
+                <p className="text-gray-300 mb-4 leading-relaxed font-montserrat">
                   {project.description}
                 </p>
 

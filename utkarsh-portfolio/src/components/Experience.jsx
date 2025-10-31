@@ -13,10 +13,10 @@ const Experience = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 font-sora">
             <span className="gradient-text">Experience</span>
           </h2>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-lg font-montserrat">
             My professional journey and work experience
           </p>
         </motion.div>
@@ -46,22 +46,22 @@ const Experience = () => {
                 }`}>
                   <div className="bg-dark-gray rounded-2xl p-6 border border-gray-800 hover:border-purple-500 transition-all duration-300 card-hover">
                     <div className="flex items-center justify-between mb-3">
-                      <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium">
+                      <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium font-montserrat">
                         {exp.type === 'work' ? 'Work' : 'Internship'}
                       </span>
-                      <div className="flex items-center space-x-1 text-gray-400 text-sm">
+                      <div className="flex items-center space-x-1 text-gray-400 text-sm font-montserrat">
                         <Calendar size={16} />
                         <span>{exp.period}</span>
                       </div>
                     </div>
                     
-                    <h3 className="text-xl font-bold text-white mb-2">{exp.role}</h3>
-                    <div className="flex items-center space-x-1 text-purple-400 mb-4">
+                    <h3 className="text-xl font-bold text-white mb-2 font-sora">{exp.role}</h3>
+                    <div className="flex items-center space-x-1 text-purple-400 mb-4 font-montserrat">
                       <MapPin size={16} />
                       <span className="font-medium">{exp.company}</span>
                     </div>
                     
-                    <p className="text-gray-300 mb-4 leading-relaxed">
+                    <p className="text-gray-300 mb-4 leading-relaxed font-montserrat">
                       {exp.description}
                     </p>
                     

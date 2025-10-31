@@ -12,12 +12,12 @@ const Hero = () => {
       <div className="section-padding relative z-10 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left font-montserrat">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Hi, I'm <span className="gradient-text">{personalInfo.name}</span>
+              Hi, I'm <span className="gradient-text font-sora">{personalInfo.name}</span>
             </h1>
             
-            <div className="text-xl md:text-2xl text-gray-300 mb-6 h-8">
+            <div className="text-xl md:text-2xl text-gray-300 mb-6 h-8 font-sora">
               <TypeAnimation
                 sequence={[
                   'Web Developer',
@@ -35,7 +35,7 @@ const Hero = () => {
               />
             </div>
             
-            <p className="text-gray-400 text-lg mb-8 max-w-2xl">
+            <p className="text-gray-400 text-lg mb-8 max-w-2xl font-montserrat">
               {personalInfo.about}
             </p>
             
@@ -45,7 +45,7 @@ const Hero = () => {
                 download="Utkarsh_Jain_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center space-x-2 gradient-bg px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300"
+                className="flex items-center justify-center space-x-2 gradient-bg px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-sora font-semibold"
               >
                 <Download size={20} />
                 <span>Check Resume</span>
@@ -53,7 +53,7 @@ const Hero = () => {
               
               <a
                 href="#projects"
-                className="flex items-center justify-center space-x-2 border border-purple-600 text-purple-400 px-6 py-3 rounded-lg hover:bg-purple-600 hover:text-white transition-all duration-300"
+                className="flex items-center justify-center space-x-2 border border-purple-600 text-purple-400 px-6 py-3 rounded-lg hover:bg-purple-600 hover:text-white transition-all duration-300 font-sora font-semibold"
               >
                 <span>View Projects</span>
                 <ArrowRight size={20} />
@@ -64,16 +64,13 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full gradient-bg p-1 animate-pulse">
-                <div className="w-full h-full rounded-full bg-dark overflow-hidden border-4 border-dark">
-                  <img
-                    src={personalInfo.profileImage}
-                    alt={personalInfo.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-600">
+                <img
+                  src={personalInfo.profileImage}
+                  alt={personalInfo.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="absolute -inset-4 rounded-full gradient-bg opacity-20 blur-xl animate-pulse"></div>
             </div>
           </div>
         </div>
