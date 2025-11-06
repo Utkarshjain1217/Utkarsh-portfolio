@@ -1,20 +1,20 @@
 export const experiences = [
   {
     id: 1,
-    role: "Freelance Software Developer",
-    company: "Subway Franchise USA",
-    period: "2024",
-    description: "Developed an Android app for in-store registration and digital menu management. Implemented real-time order tracking and payment integration.",
-    skills: ["Java", "Android Studio", "Firebase", "Material UI", "HTML", "CSS", "JS", "NodeJS"],
+    role: "R&D Project Contributor",
+    company: "MEMOC",
+    period: "Oct 2024 - Jan 2025",
+    description: "Contributed to an international R&D project focused on corrosion prediction in oil & gas production units using deep learning. Developed computational models to assess the combined impact of velocity, salinity, and CO₂ concentration on corrosion across downhole, flowline, and pipeline systems.",
+    skills: ["Deep Learning", "Python", "Data Analysis", "Predictive Modeling", "TensorFlow"],
     type: "work"
   },
   {
     id: 2,
-    role: "Web Development Intern",
-    company: "Tech Solutions Inc.",
-    period: "Summer 2023",
-    description: "Built responsive web applications using React and Node.js. Collaborated with team on UI/UX design and backend API development.",
-    skills: ["React", "Node.js", "MongoDB", "Tailwind CSS", "REST APIs"],
-    type: "internship"
+    role: "Machine Learning Intern",
+    company: "Testaing",
+    period: "Jul 2024 - Present",
+    description: "Designed and implemented an end-to-end vessel scheduling system using constraint and linear programming (Google OR-Tools) to optimize ship loading/unloading operations. Integrated ship draft, DWCC/DWT, and port geolocation data to compute optimal cargo tonnage, minimize berth delays, and improve overall fleet utilization.",
+    skills: ["Python", "Google OR-Tools", "Linear Programming", "Data Analysis", "CSV/Excel Automation"],
+    type: "work"
   }
 ];

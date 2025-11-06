@@ -7,9 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#A020F0',
-        dark: '#0B0C10',
-        'dark-gray': '#1F2833',
+        primary: '#FFFFFF',
+        dark: '#000000',
+        'dark-gray': '#0a0a0a',
+        'darker-gray': '#1a1a1a',
       },
       fontFamily: {
         'sora': ['Sora', 'sans-serif'],

@@ -1,7 +1,9 @@
 export const personalInfo = {
   name: "Utkarsh Jain",
-  role: "Web developer and analytics enthusiast",
-  about: "I'm passionate about building creative, efficient, and scalable applications using modern technologies with a strong foundation in full-stack development.",
+  role: "Full Stack Developer",
+  tagline: "// C++ // REACT // NODE.JS",
+  about: "I partner with teams to turn ideas into products with clean interfaces, sharp decisions, and fast execution.",
+  subtext: "Talk is cheap. Show me the code.",
   resume: "/images/Utkarsh_Jain_Resume.pdf",
   github: "https://github.com/Utkarshjain1217",
   linkedin: "https://www.linkedin.com/in/utkarsh-jain-5a673b22b/",

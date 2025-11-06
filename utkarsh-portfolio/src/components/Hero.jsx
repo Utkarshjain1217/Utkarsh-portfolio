@@ -1,77 +1,57 @@
 import React from 'react';
-import { TypeAnimation } from 'react-type-animation';
-import { Download, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 import ParticlesBackground from './ParticlesBackground';
 
 const Hero = () => {
   return (
-    <section id="about" className="min-h-screen relative flex items-center justify-center overflow-hidden">
+    <section id="about" className="min-h-screen relative flex items-center overflow-hidden section-padding">
       <ParticlesBackground />
       
-      <div className="section-padding relative z-10 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
-          <div className="text-center lg:text-left font-montserrat">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Hi, I'm <span className="gradient-text font-sora">{personalInfo.name}</span>
-            </h1>
-            
-            <div className="text-xl md:text-2xl text-gray-300 mb-6 h-8 font-sora">
-              <TypeAnimation
-                sequence={[
-                  'Web Developer',
-                  2000,
-                  'Android Developer',
-                  2000,
-                  'Full Stack Developer',
-                  2000,
-                  'Software Engineer',
-                  2000,
-                ]}
-                wrapper="span"
-                speed={50}
-                repeat={Infinity}
-              />
-            </div>
-            
-            <p className="text-gray-400 text-lg mb-8 max-w-2xl font-montserrat">
-              {personalInfo.about}
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a
-                href={personalInfo.resume}
-                download="Utkarsh_Jain_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center space-x-2 gradient-bg px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-sora font-semibold"
-              >
-                <Download size={20} />
-                <span>Check Resume</span>
-              </a>
-              
-              <a
-                href="#projects"
-                className="flex items-center justify-center space-x-2 border border-purple-600 text-purple-400 px-6 py-3 rounded-lg hover:bg-purple-600 hover:text-white transition-all duration-300 font-sora font-semibold"
-              >
-                <span>View Projects</span>
-                <ArrowRight size={20} />
-              </a>
-            </div>
+      <div className="relative z-10 w-full max-w-7xl mx-auto">
+        <div>
+          {/* Developer Portfolio Badge */}
+          <div className="flex items-center space-x-2 mb-8">
+            <div className="w-1 h-1 bg-white"></div>
+            <span className="text-gray-500 text-xs tracking-[0.3em] uppercase font-montserrat">Developer Portfolio</span>
+          </div>
+
+          {/* Name */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-sora text-white leading-tight">
+            {personalInfo.name}
+          </h1>
+          
+          {/* Tech Stack Tags */}
+          <div className="text-gray-600 text-xs mb-10 font-montserrat tracking-widest">
+            {personalInfo.tagline}
           </div>
           
-          {/* Profile Image */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-600">
-                <img
-                  src={personalInfo.profileImage}
-                  alt={personalInfo.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
+          {/* Main Heading */}
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-normal text-gray-400 mb-8 leading-relaxed font-montserrat max-w-4xl">
+            {personalInfo.about}
+          </h2>
+          
+          {/* Subtext */}
+          <p className="text-gray-600 text-sm mb-12 font-montserrat italic">
+            {personalInfo.subtext}
+          </p>
+          
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="#projects"
+              className="inline-flex items-center justify-center px-6 py-2.5 bg-white text-black hover:bg-gray-200 transition-all duration-300 font-montserrat font-medium text-sm"
+            >
+              View Work
+              <ArrowRight size={14} className="ml-2" />
+            </a>
+            
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center px-6 py-2.5 border border-gray-800 text-white hover:border-white transition-all duration-300 font-montserrat font-medium text-sm"
+            >
+              Get in Touch
+            </a>
           </div>
         </div>
       </div>

@@ -5,25 +5,25 @@ import { Calendar, Award } from 'lucide-react';
 
 const Education = () => {
   return (
-    <section id="education" className="section-padding bg-dark">
-      <div className="max-w-6xl mx-auto">
+    <section id="education" className="section-padding bg-black">
+      <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 font-sora">
-            <span className="gradient-text">Education</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-sora text-white leading-tight">
+            Education
           </h2>
-          <p className="text-gray-400 text-lg font-montserrat">
-            My academic background and qualifications
+          <p className="text-gray-600 text-sm font-montserrat">
+            Academic background and qualifications.
           </p>
         </motion.div>
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-purple-600 to-pink-600"></div>
+          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-white to-gray-400"></div>
 
           <div className="space-y-12">
             {education.map((edu, index) => (
@@ -44,10 +44,10 @@ const Education = () => {
                 <div className={`ml-12 md:ml-0 md:w-5/12 ${
                   index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'
                 }`}>
-                  <div className="bg-dark-gray rounded-2xl p-6 border border-gray-800 hover:border-purple-500 transition-all duration-300 card-hover">
+                  <div className="bg-dark-gray rounded-2xl p-6 border border-gray-800 hover:border-white transition-all duration-300 card-hover">
                     {/* Institution Logo and Name */}
                     <div className="flex items-center space-x-4 mb-4">
-                      <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center overflow-hidden border-2 border-purple-500 flex-shrink-0">
+                      <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center overflow-hidden border-2 border-white flex-shrink-0">
                         {edu.logo ? (
                           <img 
                             src={edu.logo} 
@@ -55,14 +55,14 @@ const Education = () => {
                             className="w-full h-full object-cover"
                           />
                         ) : (
-                          <span className="text-purple-600 font-bold text-sm">
+                          <span className="text-black font-bold text-sm">
                             {edu.institution.split(' ').map(word => word[0]).join('')}
                           </span>
                         )}
                       </div>
                       <div>
                         <h3 className="text-lg font-bold text-white">{edu.institution}</h3>
-                        <p className="text-purple-400">{edu.degree}</p>
+                        <p className="text-gray-300">{edu.degree}</p>
                       </div>
                     </div>
 
@@ -85,7 +85,7 @@ const Education = () => {
                         <ul className="space-y-1">
                           {edu.achievements.map((achievement, achievementIndex) => (
                             <li key={achievementIndex} className="text-sm text-gray-400 flex items-center space-x-2">
-                              <div className="w-1 h-1 bg-purple-500 rounded-full"></div>
+                              <div className="w-1 h-1 bg-white rounded-full"></div>
                               <span>{achievement}</span>
                             </li>
                           ))}

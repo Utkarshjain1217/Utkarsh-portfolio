@@ -5,23 +5,23 @@ import { ExternalLink, Github, Calendar } from 'lucide-react';
 
 const Projects = () => {
   return (
-    <section id="projects" className="section-padding bg-dark-gray">
+    <section id="projects" className="section-padding bg-black">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 font-sora">
-            <span className="gradient-text">Projects</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-sora text-white leading-tight">
+            Projects
           </h2>
-          <p className="text-gray-400 text-lg font-montserrat">
-            Some of my recent work and personal projects
+          <p className="text-gray-600 text-sm font-montserrat">
+            Selected work and personal projects.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -29,24 +29,20 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-dark rounded-2xl overflow-hidden border border-gray-800 hover:border-purple-500 transition-all duration-300 card-hover group"
+              className="bg-black border border-gray-900 hover:border-gray-800 transition-all duration-300 group"
             >
-              {/* Project Image */}
-              <div className="h-48 bg-gradient-to-br from-purple-500/20 to-pink-500/20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-80"></div>
-                <div className="absolute bottom-4 left-4">
-                  <h3 className="text-xl font-bold text-white font-sora">{project.title}</h3>
+              {/* Project Header */}
+              <div className="p-6 border-b border-gray-900">
+                <h3 className="text-lg font-semibold text-white font-montserrat mb-2">{project.title}</h3>
+                <div className="flex items-center space-x-2 text-gray-600 font-montserrat">
+                  <Calendar size={14} />
+                  <span className="text-xs">{project.period}</span>
                 </div>
               </div>
 
               {/* Project Content */}
               <div className="p-6">
-                <div className="flex items-center space-x-2 text-gray-400 mb-3 font-montserrat">
-                  <Calendar size={16} />
-                  <span className="text-sm">{project.period}</span>
-                </div>
-
-                <p className="text-gray-300 mb-4 leading-relaxed font-montserrat">
+                <p className="text-gray-500 mb-4 leading-relaxed font-montserrat text-sm">
                   {project.description}
                 </p>
 
@@ -55,7 +51,7 @@ const Projects = () => {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-2 py-1 bg-gray-800 text-gray-300 rounded text-xs"
+                      className="px-2 py-1 border border-gray-900 text-gray-600 text-xs font-montserrat"
                     >
                       {tech}
                     </span>
