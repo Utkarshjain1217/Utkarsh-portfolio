@@ -1,7 +1,6 @@
 export const personalInfo = {
   name: "Utkarsh Jain",
-  role: "Full Stack Developer",
-  tagline: "// C++ // REACT // NODE.JS",
+  role: "Developer & ML Enthusiast",
   about: "I partner with teams to turn ideas into products with clean interfaces, sharp decisions, and fast execution.",
   subtext: "Talk is cheap. Show me the code.",
   resume: "/images/Utkarsh_Jain_Resume.pdf",
