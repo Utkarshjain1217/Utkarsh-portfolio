@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { projects } from '../data/projectsData';
-import { ExternalLink, Github, Calendar } from 'lucide-react';
+import { ExternalLink, Github, Calendar, MapPin } from 'lucide-react';
 
 const Projects = () => {
   return (
@@ -43,9 +43,17 @@ const Projects = () => {
                     {project.title}
                   </a>
                 </h3>
-                <div className="flex items-center space-x-2 text-gray-400 font-montserrat">
-                  <Calendar size={14} />
-                  <span className="text-xs">{project.period}</span>
+                <div className="flex flex-wrap items-center gap-3 text-gray-400 font-montserrat text-xs">
+                  <div className="flex items-center space-x-1">
+                    <Calendar size={14} />
+                    <span>{project.period}</span>
+                  </div>
+                  {project.location && (
+                    <div className="flex items-center space-x-1">
+                      <MapPin size={14} />
+                      <span>{project.location}</span>
+                    </div>
+                  )}
                 </div>
               </div>
 
