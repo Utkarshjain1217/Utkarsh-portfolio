@@ -64,7 +64,7 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-sora text-white leading-tight">
             Contact
           </h2>
-          <p className="text-gray-600 text-sm font-montserrat">
+          <p className="text-gray-400 text-sm font-montserrat">
             Get in touch for opportunities and collaborations.
           </p>
         </motion.div>

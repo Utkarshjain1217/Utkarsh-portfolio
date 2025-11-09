@@ -16,7 +16,7 @@ const Experience = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-sora text-white leading-tight">
             Experience
           </h2>
-          <p className="text-gray-600 text-sm font-montserrat">
+          <p className="text-gray-400 text-sm font-montserrat">
             Professional work history and contributions.
           </p>
         </motion.div>
@@ -36,12 +36,12 @@ const Experience = () => {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-3">
                   <div>
                     <h3 className="text-lg font-semibold text-white font-montserrat mb-1">{exp.role}</h3>
-                    <div className="flex items-center space-x-2 text-gray-500">
+                    <div className="flex items-center space-x-2 text-gray-400">
                       <MapPin size={14} />
                       <span className="text-sm font-montserrat">{exp.company}</span>
                     </div>
                   </div>
-                  <div className="flex items-center space-x-2 text-gray-600 font-montserrat text-sm">
+                  <div className="flex items-center space-x-2 text-gray-400 font-montserrat text-sm">
                     <Calendar size={14} />
                     <span>{exp.period}</span>
                   </div>
@@ -50,7 +50,7 @@ const Experience = () => {
               
               {/* Content */}
               <div className="p-6">
-                <p className="text-gray-500 mb-4 leading-relaxed font-montserrat text-sm">
+                <p className="text-gray-400 mb-4 leading-relaxed font-montserrat text-sm">
                   {exp.description}
                 </p>
                 
@@ -59,7 +59,7 @@ const Experience = () => {
                   {exp.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
-                      className="px-2 py-1 border border-gray-900 text-gray-600 text-xs font-montserrat"
+                      className="px-2 py-1 border border-gray-900 text-gray-400 text-xs font-montserrat"
                     >
                       {skill}
                     </span>

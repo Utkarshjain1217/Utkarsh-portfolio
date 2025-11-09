@@ -42,7 +42,7 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-sora text-white leading-tight">
             Skills
           </h2>
-          <p className="text-gray-600 text-sm font-montserrat">
+          <p className="text-gray-400 text-sm font-montserrat">
             Technical expertise and proficiencies.
           </p>
         </motion.div>
@@ -63,7 +63,7 @@ const Skills = () => {
               <h3 className="text-sm font-semibold text-white mb-3 font-montserrat tracking-wide uppercase">{category.title}</h3>
               <div className="space-y-1.5">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="flex items-center text-gray-500 font-montserrat text-xs">
+                  <div key={skillIndex} className="flex items-center text-gray-400 font-montserrat text-xs">
                     <span className="w-1 h-1 bg-gray-800 mr-2.5"></span>
                     <span>{skill.name}</span>
                   </div>

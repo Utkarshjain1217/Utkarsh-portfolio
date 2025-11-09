@@ -16,7 +16,7 @@ export const projects = [
     description: "Designed a web-based system to verify Aadhar cards by detecting and extracting details using YOLOv8 for improved identification accuracy. Implemented OCR (Tesseract) for text extraction and applied the Verhoeff algorithm for Aadhar validation, enhancing verification efficiency and reducing false detections.",
     technologies: ["Python", "Flask", "YOLOv8", "OCR", "Tesseract", "Image Processing"],
     image: "/images/project2.jpg",
-    githubLink: "https://github.com/Utkarshjain1217",
+    githubLink: "https://github.com/Utkarshjain1217/Adhar_card_validation",
     liveLink: "#"
   },
   {
@@ -36,7 +36,7 @@ export const projects = [
     description: "Developed an article analysis platform combining Flask-based NLP processing with a Chrome Extension to classify news content as factual or opinion-based and detect political leaning in real time. Enhanced accuracy and accessibility of media bias detection through efficient backend integration and keyword-based NLP techniques.",
     technologies: ["Python", "Flask", "NLTK", "HTML", "JavaScript", "Chrome Extension", "REST API", "Flask-CORS"],
     image: "/images/project4.jpg",
-    githubLink: "https://github.com/Utkarshjain1217",
+    githubLink: "https://github.com/hackmanv7/Pixer",
     liveLink: "#"
   }
 ];

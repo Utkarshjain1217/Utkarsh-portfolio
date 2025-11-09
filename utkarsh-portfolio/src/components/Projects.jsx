@@ -16,7 +16,7 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-sora text-white leading-tight">
             Projects
           </h2>
-          <p className="text-gray-600 text-sm font-montserrat">
+          <p className="text-gray-400 text-sm font-montserrat">
             Selected work and personal projects.
           </p>
         </motion.div>
@@ -33,8 +33,17 @@ const Projects = () => {
             >
               {/* Project Header */}
               <div className="p-6 border-b border-gray-900">
-                <h3 className="text-lg font-semibold text-white font-montserrat mb-2">{project.title}</h3>
-                <div className="flex items-center space-x-2 text-gray-600 font-montserrat">
+                <h3 className="text-lg font-semibold font-montserrat mb-2">
+                  <a 
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-gray-300 transition-colors duration-300"
+                  >
+                    {project.title}
+                  </a>
+                </h3>
+                <div className="flex items-center space-x-2 text-gray-400 font-montserrat">
                   <Calendar size={14} />
                   <span className="text-xs">{project.period}</span>
                 </div>
@@ -42,7 +51,7 @@ const Projects = () => {
 
               {/* Project Content */}
               <div className="p-6">
-                <p className="text-gray-500 mb-4 leading-relaxed font-montserrat text-sm">
+                <p className="text-gray-400 mb-4 leading-relaxed font-montserrat text-sm">
                   {project.description}
                 </p>
 
@@ -51,7 +60,7 @@ const Projects = () => {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-2 py-1 border border-gray-900 text-gray-600 text-xs font-montserrat"
+                      className="px-2 py-1 border border-gray-900 text-gray-400 text-xs font-montserrat"
                     >
                       {tech}
                     </span>

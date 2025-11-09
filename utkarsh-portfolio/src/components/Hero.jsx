@@ -18,11 +18,18 @@ const Hero = () => {
 
           {/* Name */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-sora text-white leading-tight">
-            {personalInfo.name}
+            <a 
+              href="https://github.com/Utkarshjain1217" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-gray-300 transition-colors duration-300"
+            >
+              {personalInfo.name}
+            </a>
           </h1>
           
           {/* Tech Stack Tags */}
-          <div className="text-gray-600 text-xs mb-10 font-montserrat tracking-widest">
+          <div className="text-gray-400 text-xs mb-10 font-montserrat tracking-widest">
             {personalInfo.tagline}
           </div>
           
@@ -32,7 +39,7 @@ const Hero = () => {
           </h2>
           
           {/* Subtext */}
-          <p className="text-gray-600 text-sm mb-12 font-montserrat italic">
+          <p className="text-gray-400 text-sm mb-12 font-montserrat italic">
             {personalInfo.subtext}
           </p>
           
